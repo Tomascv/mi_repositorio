@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/escala-de-justicia.png" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,100;1,200&family=Titillium+Web:ital,wght@0,200;0,400;0,600;0,700;1,200&display=swap"
+        rel="stylesheet">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <ul class="nav__links">
+            <li class="nav__item">
+                <a class="nav__link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="clientes.html">Nuestros Clientes</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link--active" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="empleos.html">Empleos</a>
+        </ul>
+
+    </nav>
+    <header>
+        <h1 class="header_tit " > Contacto </h1>
+    </header>
+
+    <main class="gridarea-res">
+        <form class="formulario">
+            <fieldset class="formcontent">
+                <label for="nombre">Nombre</label>
+                <br>
+                <input class="contactform" type="text" name="Nombre" id="nombre">
+                <br>
+                <label for="apellido">Apellido</label>
+                <br>
+                <input class="contactform" type="text" name="apellido" id="apellido">
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <br>
+                    <input class="contactform" type="email" name="correo" id="correo"
+                        placeholder="sunombre@sunombre.com" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono (código de área + número)
+                    </label>
+                    <br>
+                    <input class="contactform" type="tel" placeholder="Ej: 11 5555555" name="Tel" id="Tel" required>
+
+                </div>
+                <label for="datos">Tu consulta</label>
+                <br>
+                <textarea class="contactform" name="consulta" id="consulta" cols="60" rows="5"
+                    placeholder="Escribí acá"></textarea>
+                <br>
+
+                <div>
+                    <label for="mediodecontacto">
+                        <p>¿Por qué medio querés que nos comuniquemos?</p>
+                    </label>
+                    <select name="Medio de contacto" id="mediodecontacto">
+                        <option value="none">(Seleccione una opción)</option>
+                        <option value="tel">Teléfono</option>
+                        <option value="Whp">WhatsApp</option>
+                        <option value="telg">Telegram</option>
+                        <option value="sms">Mensaje de Texto</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="Newsletter">
+                        <p>¿Querés recibir novedades?</p>
+                    </label>
+                    <label for="Si">Si</label>
+                    <input type="radio" name="Newsletter" id="Newsletter">
+                    <label for="No">No</label>
+                    <input type="radio" name="Newsletter" id="Newsletter">
+                </div>
+                <br>
+                <input type="submit" value="Registrar">
+                <input type="reset" value="Limpiar">
+                <br>
+            </fieldset>
+        </form>
+    </main>
+
+
+    <footer id="pie">
+        <h6>Copyright 2022 - Todos los derechos reservados.</h6>
+    </footer>
+
+</body>
+
+</html>
